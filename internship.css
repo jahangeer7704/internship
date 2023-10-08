@@ -11,30 +11,15 @@
   text-decoration: none;
   user-select: none;
 }
-body {
-  overflow: auto;
 
-  background: hsla(233, 100%, 90%, 1);
+body,html {
+height:100%
 
-  background: linear-gradient(
-    90deg,
-    hsla(233, 100%, 90%, 1) 0%,
-    hsla(0, 0%, 89%, 1) 100%
-  );
+;
+overflow: auto;
 
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(233, 100%, 90%, 1) 0%,
-    hsla(0, 0%, 89%, 1) 100%
-  );
 
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(233, 100%, 90%, 1) 0%,
-    hsla(0, 0%, 89%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CAD0FF", endColorstr="#E3E3E3", GradientType=1 );
+  background-repeat: no-repeat;
 }
 .internship-container {
   width: 80%;
@@ -57,6 +42,10 @@ h1 {
   height: 350px;
   box-shadow: 10px 10px 20px grey;
   border-radius: 10px;
+  transition: scale .5s ease;
+}
+.cards:hover{
+  scale: 1.02;
 }
 
 .card-front {
@@ -71,7 +60,7 @@ h1 {
   cursor: pointer;
 }
 .web {
-  background: url("./web.jpg") no-repeat;
+  background: url("./web1.jpg") no-repeat;
   background-size: cover;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.563);
@@ -96,7 +85,7 @@ h1 {
   background-position: center;
 }
 .canva {
-  background: url("./canva.avif") no-repeat;
+  background: url("./canva.jpg") no-repeat;
   background-size: 155%;
   border-radius: 10px;
   background-position: right;
@@ -135,7 +124,7 @@ h1 {
 
 .web-back {
   color: #000000;
-  background-color: rgb(0, 254, 190);
+  background-color: #284490;
 }
 .app-back {
   color: #000000;
@@ -143,7 +132,7 @@ h1 {
 }
 
 .py-back {
-  background-color: rgb(71, 35, 181);
+  background-color: rgb(2, 9, 73);
   color: #ffffff;
 }
 .java-back {
@@ -208,4 +197,61 @@ using checked class i flip the faces of each, not much complicated
 }
 #cards-app:checked ~ .cards-inner {
   transform: rotateY(180deg);
+}
+/* background animation */
+
+.common-circle{
+filter: blur(20px);
+border-radius: 50%;
+overflow: hidden;
+position: absolute;
+z-index: -1;
+
+
+}
+.circles{
+overflow: hidden;
+
+}
+.circle1{
+  background-color: rgba(0, 55, 255, 0.436);
+  height: 200px;
+  width: 200px;
+  right: 5%;
+  top: 25%;
+animation: circle 3s ease-in-out  infinite ;
+
+}.circle2{
+  background-color: rgba(255, 0, 0, 0.412);
+  height: 200px;
+  width: 200px;
+  top: 40%;
+  left: 3%;
+animation: circle 3s ease-in-out 1s  infinite ;
+
+}.circle3{
+  background-color: rgba(221, 0, 255, 0.462);
+  height: 200px;
+  width: 200px;
+  bottom: 5%;
+animation: circle 3s ease-in-out 2s infinite ;
+
+  right: 10%;
+}.circle4{
+  background-color: rgba(16, 236, 4, 0.44);
+  height: 200px;
+  width: 200px;
+animation: circle 3s ease-in-out 3s infinite ;
+
+}
+@keyframes circle {
+  
+  50%{
+    scale: .8;
+
+  }  100%{
+    scale: 1;
+
+  }
+  
 }
