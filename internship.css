@@ -12,14 +12,11 @@
   user-select: none;
 }
 
-body,html {
-height:100%
-
-;
-overflow: auto;
-
-
-  background-repeat: no-repeat;
+body,
+html {
+  height: 100%;
+  overflow: auto;
+background-color: #00000077;
 }
 .internship-container {
   width: 80%;
@@ -29,6 +26,7 @@ h1 {
   font-family: "Cinzel", serif;
   height: 100px;
   padding-top: 20px;
+  color: white;
 }
 .cards-container {
   height: auto;
@@ -40,11 +38,11 @@ h1 {
 }
 .cards {
   height: 350px;
-  box-shadow: 10px 10px 20px grey;
   border-radius: 10px;
-  transition: scale .5s ease;
+  transition: scale .5s;
+
 }
-.cards:hover{
+.cards:hover {
   scale: 1.02;
 }
 
@@ -58,6 +56,7 @@ h1 {
   font-family: "Exo 2", sans-serif;
   font-size: 18px;
   cursor: pointer;
+  padding-bottom: 10px;
 }
 .web {
   background: url("./web1.jpg") no-repeat;
@@ -200,58 +199,52 @@ using checked class i flip the faces of each, not much complicated
 }
 /* background animation */
 
-.common-circle{
-filter: blur(20px);
-border-radius: 50%;
-overflow: hidden;
-position: absolute;
-z-index: -1;
-
-
+.common-circle {
+  filter: blur(20px);
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
 }
-.circles{
-overflow: hidden;
-
+.circles {
+  overflow: hidden;
 }
-.circle1{
+.circle1 {
   background-color: rgba(0, 55, 255, 0.436);
   height: 200px;
   width: 200px;
   right: 5%;
   top: 25%;
-animation: circle 3s ease-in-out  infinite ;
-
-}.circle2{
+  animation: circle 3s ease-in-out infinite;
+}
+.circle2 {
   background-color: rgba(255, 0, 0, 0.412);
   height: 200px;
   width: 200px;
   top: 40%;
   left: 3%;
-animation: circle 3s ease-in-out 1s  infinite ;
-
-}.circle3{
+  animation: circle 3s ease-in-out 1s infinite;
+}
+.circle3 {
   background-color: rgba(221, 0, 255, 0.462);
   height: 200px;
   width: 200px;
   bottom: 5%;
-animation: circle 3s ease-in-out 2s infinite ;
+  animation: circle 3s ease-in-out 2s infinite;
 
   right: 10%;
-}.circle4{
+}
+.circle4 {
   background-color: rgba(16, 236, 4, 0.44);
   height: 200px;
   width: 200px;
-animation: circle 3s ease-in-out 3s infinite ;
-
+  animation: circle 3s ease-in-out 3s infinite;
 }
 @keyframes circle {
-  
-  50%{
-    scale: .8;
-
-  }  100%{
-    scale: 1;
-
+  50% {
+    scale: 0.8;
   }
-  
+  100% {
+    scale: 1;
+  }
 }
