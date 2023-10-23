@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <main class="content">
+     
+                <h3>Sign In</h3>
+          
+<form action="">
+    <label for="fName">Username</label>
+    <input type="text" id="fName" placeholder="eg.john or 123@gmail" required>
+
+   <div class="password-group">
+    <label for="password"  >Password  <i class="fa-solid fa-eye" id="eye"></i></label>
+    <input type="password" placeholder="pass1234" id="password" required >
+   
+    <a href="">Forget Password?</a>
+   </div>
+
+<div class="button-group">
+    <input type="submit" for="fName" id="submit" value="SIGN IN">
+    <button id="createAccount" onclick="locationChange()">Don't have an account?<span> Sign up</span></button>
+
+</div>
+</form>
+
+        </main>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
