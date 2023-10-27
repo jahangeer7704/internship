@@ -57,6 +57,7 @@ function App(){
             targetCaught.classList.add("text-green-500")
             
             targetCaught.innerHTML = "O";
+            winnerEval();
             
             
           }
