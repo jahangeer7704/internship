@@ -8,8 +8,11 @@ spinnerParent.append(spinner)
 parentElement.append(spinnerParent)
 
 window.addEventListener("DOMContentLoaded",()=>{
-setInterval(()=>{
+let init=setInterval(()=>{
+clearInterval(init)
   spinnerParent.remove()
+App()
+ 
 },100)
 })
 
@@ -166,4 +169,3 @@ function App(){
   
   
 }
-App()
