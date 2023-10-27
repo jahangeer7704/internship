@@ -27,7 +27,6 @@ function App(){
   
   function targetButton(e) {
     let targetCaught = e.target;
-    console.log(1);
     if (targetCaught.tagName === "BUTTON") {
       
       
